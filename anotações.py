@@ -1,0 +1,74 @@
+﻿#### Tipos primitivos
+    #   int()   -> Utilizado para representar números inteiros.     Exp: 17, 21, 35, 42.
+    #   float() -> Usado para números de ponto flutuante.           Exp: 2.3, 1.6, 14.9, 67.1.
+    #   bool()  -> Armazena valores booleanos.                      Exp: True ou False.
+    #   str()   -> Representa conjuntos de caracteres.              Exp: 'frase', '123', '  xx  '.
+    #   type()  -> Retorna o tipo primitivo de uma variável.        Exp: frase = 'oi' print(type(frase)) indica que seu tipo primitivo é string.
+
+###  Operadores Aritméticos 
+    #   Potencia            **
+    #   Multiplicação       *   
+    #   Divisão             /
+    #   Divisão inteira     //
+    #   Resto da divisão    %
+    #   Adição              + 
+    #   Subtração           -
+
+### Ordem de Precedência
+    #   1°  '()'
+    #   2°  '**'
+    #   3°  '*', '/', '//', '%'
+    #   4°  '+', '-'
+
+###  Módulos 
+    # import math, random           -> Importa bibliotecas inteiras específicas.
+    # from math import cin, cos     -> Importa funções específicas de uma biblioteca.
+
+    ## Biblioteca Math
+        # sqrt()                    -> Calcula a raiz quadrada de um número.                        Exp: math.sqrt(numero)
+        # floor()                   -> Arredonda o número para o valor inteiro inferior.            Exp: 5.23 torna-se 5.00.
+        # ceil()                    -> Retorna o valor inteiro superior.                            Exp: 5.23 em 6.
+        # hypot()                   -> Calcula a hipotenusa dos catetos.                            Exp: math.hypot(co, ca).
+        # pow()                     -> Realiza a potenciação de um número.                          Exp: pow(2, 3) ou seja, 2³ ou seja, 8.
+        # radians()                 -> Converte ângulos em graus para radianos.                     Exp: math.radians(180).
+        # sin()                     -> Retorna o seno de um ângulo em radianos.                     Exp: math.sin(30).
+        # cos()                     -> Retorna o cosseno de um ângulo em radianos.                  Exp: math.cos(30).
+        # tan()                     -> Retorna a tangente de um ângulo em radianos.                 Exp: math.tan(30).
+
+    ## Biblioteca random
+        # randint()                 -> Gera um número inteiro dentro de um intervalo.                           Exp: random.randint(1, 10).
+        # choice()                  -> Escolhe um elemento aleatório de uma sequência.                          Exp: random.choice(x).
+        # shuffle()                 -> Embaralha uma sequência, reorganizando os elementos no lugar.            Exp: random.shuffle(y).
+
+
+
+###  Manipulando Textos 
+    # frase = 'Esse é um exemplo de frase'
+
+    ## Fatiamento
+        # frase[10]                 -> Retorna o carácter na posição especificada.                                                  Exp: 'e'.
+        # frase[10:17]              -> Retorna os caracteres no intervalo especificado.                                             Exp: 'exemplo'.
+        # frase[10:26:2]            -> Retorna os caracteres no intervalo especificado com um intervalo de especificado.            Exp: 'eepod rs'.
+
+    ## Análise
+        # len()                     -> Mostra o comprimento da frase.                                           Exp: len(frase) = 38 caracteres.
+        # find()                    -> Procura por uma substring na frase e retorna a posição inicial.          Exp: frase.find('exemplo').
+        # rfind()                   -> Procura por uma substring na frase e retorna a ultima posição.           Exp: frase.rfind('exemplo').
+        # count()                   -> Conta quantas vezes uma letra ou substring aparece na frase.             Exp: frase.count('s').
+
+    ## Transformação
+        # upper()                   -> Converte todos os caracteres para maiúsculas.                        Exp: frase.upper().
+        # lower()                   -> Converte todos os caracteres para minúsculas.                        Exp: frase.lower().
+        # capitalize()              -> Coloca toda a frase em minúsculas, exceto a primeira letra.          Exp: frase.capitalize().
+        # title()                   -> Inicia todas as palavras com letras maiúsculas.                      Exp: frase.title().
+        # replace()                 -> Substitui uma palavra por outra na frase.                            Exp: frase.replace('python','JavaScript').
+        # strip()                   -> Remove espaços em branco no início e no final da frase.              Exp: frase.strip()
+        # lstrip()                  -> Remove espaços em branco do lado esquerdo da frase.                  Exp: frase.lstrip()
+        # rstrip()                  -> Remove espaços em branco do lado direito da frase.                   Exp: frase.rstrip()
+
+    ## Divisão
+        # split()                   -> Divide uma string em substrings, usando espaços em branco como padrão, e cria uma lista.         Exp: frase.split().
+            # Pode receber dois atributos, que definem respectivamente o carácter a ser utilizado como referência para o corte, e o número de cortes
+
+    ## Junção
+        # .join()                   -> Combina elementos de uma sequência com uma string.           Exp: ''.join(frase) resultando em 'Esseéumexemplodefrase'.
