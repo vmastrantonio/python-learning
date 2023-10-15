@@ -40,8 +40,6 @@
         # choice()                  -> Escolhe um elemento aleatório de uma sequência.                          Exp: random.choice(x).
         # shuffle()                 -> Embaralha uma sequência, reorganizando os elementos no lugar.            Exp: random.shuffle(y).
 
-
-
 ###  Manipulando Textos 
     # frase = 'Esse é um exemplo de frase'
 
@@ -72,3 +70,4 @@
 
     ## Junção
         # .join()                   -> Combina elementos de uma sequência com uma string.           Exp: ''.join(frase) resultando em 'Esseéumexemplodefrase'.
+        

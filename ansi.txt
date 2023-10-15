@@ -1,0 +1,37 @@
+﻿Ansi é um padrão de normalização internacional que possui "escape sequence" que permite personalizar as cores do terminal.
+
+Estrutura padrão de um código ansi: \033[X:X:Xm
+
+Onde os "X" podem ser substituidos por códigos, permitindo personalizar estilo, cor do texto e cor do fundo.
+Obs: A ordem não importa, pois cada código tem um padrão que a estrutura consegue identificar o que significa.
+
+STYLE
+    - 0     -> Nenhum estilo;
+    - 1     -> Texto em negrito;
+    - 4     -> Texto sublinhado;
+    - 7     -> Inverte as configurações entre fundo e letra;
+
+TEXT
+    - 30    -> Preto;
+    - 31    -> Vermelho;
+    - 32    -> Verde;
+    - 33    -> Amarelo;
+    - 34    -> Azul;
+    - 35    -> Roxo;
+    - 36    -> Ciano;
+    - 37    -> Cinza;
+    - 97    -> Branco;
+
+BACK
+    - 40    -> Preto;
+    - 41    -> Vermelho;
+    - 42    -> Verde;
+    - 43    -> Amarelo;
+    - 44    -> Azul;
+    - 45    -> Roxo;
+    - 46    -> Ciano;
+    - 47    -> Cinza
+    - 107   -> Branco;
+
+Exemplo letra roxa com fundo amarelo.
+\033[0:35:43m
