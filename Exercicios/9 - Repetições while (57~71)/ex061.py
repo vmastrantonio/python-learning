@@ -5,8 +5,8 @@ razao = int(input("Informe a razão da PA: "))
 
 ultimo = primeiro + (10 * razao)
 
-pa = primeiro
+termo = primeiro
 
-while pa < ultimo:
-    print(pa)
-    pa += razao
+while termo < ultimo:
+    print(termo)
+    termo += razao

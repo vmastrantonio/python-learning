@@ -7,14 +7,14 @@ ultimo = primeiro + (10 * razao)
 
 Working = True
 
-pa = primeiro
+termo = primeiro
 
 while Working:
-    while pa < ultimo:
-        print(pa)
-        pa += razao
-    termos = int(input("Quer ver mais quantos termos? "))
-    if termos == 0:
+    while termo < ultimo:
+        print(termo)
+        termo += razao
+    novosTermos = int(input("Quer ver mais quantos termos? "))
+    if novosTermos == 0:
         Working = False
     else:
-        ultimo = ultimo + (termos * razao)
+        ultimo = ultimo + (novosTermos * razao)

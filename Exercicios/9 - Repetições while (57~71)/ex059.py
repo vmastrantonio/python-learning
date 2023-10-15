@@ -6,12 +6,12 @@
 # [5] sair do programa
 # Seu programa deverá realizar a operação solicitada em cada caso
 
-working = True
-
 print("Bem vindo, insira dois números para prosseguir")
 
 num1 = int(input("Insira o primeiro número: "))
 num2 = int(input("Insira o segundo número: "))
+
+working = True
 
 while working:
     print("""Menu:
@@ -21,6 +21,7 @@ while working:
         [4] novos números  
         [5] sair do programa  
         """)
+    
     chosen = int(input("Escolha uma opção: "))
     
     if chosen == 1:

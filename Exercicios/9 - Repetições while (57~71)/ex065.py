@@ -8,27 +8,24 @@ while Working:
     num = int(input("Insira um número inteiro: "))
     
     if cont == 0:
-        maior = num
-        menor = num    
-    
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+            
+        if num < menor:
+            menor = num
+            
     total += num
     cont += 1
-    
-    if num > maior:
-        maior = num
-        
-    if num < menor:
-        menor = num
     
     deseja = str(input("Quer adicionar mais um número? [ Y ] / [ N ]: ")).upper()
     
     if deseja == "N":
         Working = False
         
-if cont > 0:
-    mediaTotal = total / cont
-    print(f"Você digitou {cont} números!")
-    print(f"A média de todos os números que você digitou é {mediaTotal}")
-    print(f"O maior número digitado foi {maior} e o menor foi {menor}")
-else:
-    print("Nenhum número foi digitado.")
+mediaTotal = total / cont
+
+print(f"Você digitou {cont} números!")
+print(f"A média de todos os números que você digitou é {mediaTotal}")
+print(f"O maior número digitado foi {maior} e o menor foi {menor}")

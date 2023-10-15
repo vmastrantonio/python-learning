@@ -2,18 +2,19 @@
 
 from random import randint
 from time import sleep
-pc = randint(1, 10)
 
+computador = randint(0, 10)
+
+acertou = False
 tentativas = 0
 
-chosen = -1
-
-while chosen != pc:
-    chosen = int(input("Qual o seu palpite? "))
+while not acertou:
+    jogador = int(input("Qual o seu palpite? "))
     tentativas +=1
-    if chosen != pc:
+    if jogador == computador:
+        acertou = True
+    else:
         print("Você errou, tente novamente!")
         sleep(0.5)
-        
-    
+          
 print(f"Você acertou na {tentativas}ª tentativa!")
