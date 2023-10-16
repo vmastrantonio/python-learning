@@ -26,40 +26,40 @@
 
     ## Biblioteca Math
         # sqrt()                    -> Calcula a raiz quadrada de um número.                        Exp: math.sqrt(numero)
-        # floor()                   -> Arredonda o número para o valor inteiro inferior.            Exp: 5.23 torna-se 5.00.
-        # ceil()                    -> Retorna o valor inteiro superior.                            Exp: 5.23 em 6.
-        # hypot()                   -> Calcula a hipotenusa dos catetos.                            Exp: math.hypot(co, ca).
-        # pow()                     -> Realiza a potenciação de um número.                          Exp: pow(2, 3) ou seja, 2³ ou seja, 8.
-        # radians()                 -> Converte ângulos em graus para radianos.                     Exp: math.radians(180).
-        # sin()                     -> Retorna o seno de um ângulo em radianos.                     Exp: math.sin(30).
-        # cos()                     -> Retorna o cosseno de um ângulo em radianos.                  Exp: math.cos(30).
-        # tan()                     -> Retorna a tangente de um ângulo em radianos.                 Exp: math.tan(30).
+        # floor()                   -> Arredonda o número para o valor inteiro inferior.            Exp: 5.23 torna-se 5.00
+        # ceil()                    -> Retorna o valor inteiro superior.                            Exp: 5.23 em 6
+        # hypot()                   -> Calcula a hipotenusa dos catetos.                            Exp: math.hypot(co, ca)
+        # pow()                     -> Realiza a potenciação de um número.                          Exp: pow(2, 3) ou seja, 2³ ou seja, 8
+        # radians()                 -> Converte ângulos em graus para radianos.                     Exp: math.radians(180)
+        # sin()                     -> Retorna o seno de um ângulo em radianos.                     Exp: math.sin(30)
+        # cos()                     -> Retorna o cosseno de um ângulo em radianos.                  Exp: math.cos(30)
+        # tan()                     -> Retorna a tangente de um ângulo em radianos.                 Exp: math.tan(30)
 
     ## Biblioteca random
-        # randint()                 -> Gera um número inteiro dentro de um intervalo.                           Exp: random.randint(1, 10).
-        # choice()                  -> Escolhe um elemento aleatório de uma sequência.                          Exp: random.choice(x).
-        # shuffle()                 -> Embaralha uma sequência, reorganizando os elementos no lugar.            Exp: random.shuffle(y).
+        # randint()                 -> Gera um número inteiro dentro de um intervalo.                           Exp: random.randint(1, 10)
+        # choice()                  -> Escolhe um elemento aleatório de uma sequência.                          Exp: random.choice(x)
+        # shuffle()                 -> Embaralha uma sequência, reorganizando os elementos no lugar.            Exp: random.shuffle(y)
 
 ###  Manipulando Textos 
     # frase = 'Esse é um exemplo de frase'
 
     ## Fatiamento
-        # frase[10]                 -> Retorna o carácter na posição especificada.                                                  Exp: 'e'.
-        # frase[10:17]              -> Retorna os caracteres no intervalo especificado.                                             Exp: 'exemplo'.
-        # frase[10:26:2]            -> Retorna os caracteres no intervalo especificado com um intervalo de especificado.            Exp: 'eepod rs'.
+        # frase[10]                 -> Retorna o carácter na posição especificada.                                                  Exp: 'e'
+        # frase[10:17]              -> Retorna os caracteres no intervalo especificado.                                             Exp: 'exemplo'
+        # frase[10:26:2]            -> Retorna os caracteres no intervalo especificado com um intervalo de especificado.            Exp: 'eepod rs'
 
     ## Análise
-        # len()                     -> Mostra o comprimento da frase.                                           Exp: len(frase) = 38 caracteres.
-        # find()                    -> Procura por uma substring na frase e retorna a posição inicial.          Exp: frase.find('exemplo').
-        # rfind()                   -> Procura por uma substring na frase e retorna a ultima posição.           Exp: frase.rfind('exemplo').
-        # count()                   -> Conta quantas vezes uma letra ou substring aparece na frase.             Exp: frase.count('s').
+        # len()                     -> Mostra o comprimento da frase.                                           Exp: len(frase) = 38 caracteres
+        # find()                    -> Procura por uma substring na frase e retorna a posição inicial.          Exp: frase.find('exemplo')
+        # rfind()                   -> Procura por uma substring na frase e retorna a ultima posição.           Exp: frase.rfind('exemplo')
+        # count()                   -> Conta quantas vezes uma letra ou substring aparece na frase.             Exp: frase.count('s')
 
     ## Transformação
-        # upper()                   -> Converte todos os caracteres para maiúsculas.                        Exp: frase.upper().
-        # lower()                   -> Converte todos os caracteres para minúsculas.                        Exp: frase.lower().
-        # capitalize()              -> Coloca toda a frase em minúsculas, exceto a primeira letra.          Exp: frase.capitalize().
-        # title()                   -> Inicia todas as palavras com letras maiúsculas.                      Exp: frase.title().
-        # replace()                 -> Substitui uma palavra por outra na frase.                            Exp: frase.replace('python','JavaScript').
+        # upper()                   -> Converte todos os caracteres para maiúsculas.                        Exp: frase.upper()
+        # lower()                   -> Converte todos os caracteres para minúsculas.                        Exp: frase.lower()
+        # capitalize()              -> Coloca toda a frase em minúsculas, exceto a primeira letra.          Exp: frase.capitalize()
+        # title()                   -> Inicia todas as palavras com letras maiúsculas.                      Exp: frase.title()
+        # replace()                 -> Substitui uma palavra por outra na frase.                            Exp: frase.replace('python','JavaScript')
         # strip()                   -> Remove espaços em branco no início e no final da frase.              Exp: frase.strip()
         # lstrip()                  -> Remove espaços em branco do lado esquerdo da frase.                  Exp: frase.lstrip()
         # rstrip()                  -> Remove espaços em branco do lado direito da frase.                   Exp: frase.rstrip()
@@ -71,3 +71,34 @@
     ## Junção
         # .join()                   -> Combina elementos de uma sequência com uma string.           Exp: ''.join(frase) resultando em 'Esseéumexemplodefrase'.
         
+### Estruturas de repetição
+    ## for (Estrutura de repetição que itera sequências de qualquer objeto iteravel por um número especifico de vezes.)
+        # for x in list:                        -> Percorre todos elementos de uma determinada lista
+        # for c in range(a,b,c)                 -> Repete um bloco de código onde A é o ponto inicial, b é o ponto final e c é o número de passos.
+        # for k, v in enumerate(lista)          -> Retorna o indice e o valor de cada elemento de uma lista
+
+    ## while (Estrutura de repetição que executa um bloco de código enquanto uma condição for verdadeira.)
+        # break             -> Interrompe instantaneamente a execução da estrutura de repetição.
+        # continue          -> Interrompe a iteração atual e continua com a próxima iteração do loop.
+        # pass              -> Não tem nenhuma funcionalidade além de estruturar o código no desenvolvimento.
+
+### Variáveis compostas
+    ## Tupla (Tuplas são estruturas de armazenamento de multiplas variáveis, definidos por (). Uma tupla é imutavel, ou seja, não é possível alterar o seu conteudo após escrita.)
+        # .count()          -> Retorna o número de elementos presentes em uma tupla.                                                Exp: tupla.count()
+        # .index()          -> Retorna a posição de determinado elemento presente em uma tupla.                                     Exp: tupla.index("teste", posInicial)
+        # sorted()          -> Permite ordenar uma tupla para visualização, mas não altera o posicionamento dos elementos.          Exp: print(sorted(tupla))
+        # max()             -> Retorna o maior valor dentro de uma tupla.
+        # min()             -> Retorna o menor valor dentro de uma tupla.
+
+    ## Lista (Listas são estruturas de armazenamento de multiplas variáveis, definidos por []. Listas são mutáveis, ou seja, é possivel alterar o seu conteudo a qualquer momento.)
+        # list()            -> Cria uma lista (Forma secundária de criar uma lista, quando necessário.)                         Exp: list(range(4,11)) *Cria uma lista com os valores do 4 ao 10.
+        # .append()         -> Adiciona um novo elemento no final de uma lista.                                                 Exp: lista.append(item)
+        # .inser()          -> Insere um novo elemento em uma posição especifica da lista.                                      Exp: lista.insert(pos, item)
+        # .del()            -> Apaga um elemento de uma lista através da sua posição                                            Exp: lista.del(pos)
+        # .pop()            -> Mesmo funcionamento do del(), porém se não especificar posição deleta o ultimo elemento.         Exp: lista.pop()
+        # .remove()         -> Apaga um elemento especificado de uma lista.                                                     Exp: lista.remove(item)
+        # .sort             -> Ordena todos valores de uma lista, em ordem crescente
+            # .sort(reverse=True)            -> Ordena todos valores de uma lista, em ordem decrescente
+        # len()             -> Verifica quantos elementos tem na lista
+
+    ## Dicionário:

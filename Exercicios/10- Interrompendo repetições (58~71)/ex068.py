@@ -38,7 +38,3 @@ while True:
     else:
         print(f"Que pena, você perdeu com {cont} vitória(s) consecutiva(s).")
         break
-        
-        
-        
-    
