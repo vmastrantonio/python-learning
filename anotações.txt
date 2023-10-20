@@ -79,7 +79,20 @@
 		
      
 ### Variaveis Compostas
-	## Tuplas (Uma tupla serve para armazenar uma determinada quantidade de diferentes dados em uma mesma variavél, tupla. Que é inalterável após sua nomeação.)
-		# count('dado')			-> Conta quantas vezes aparece determinada string na tupla
+	## Tuplas (Uma tupla serve para armazenar uma determinada quantidade de diferentes dados em uma mesma variavél, tuplas são imutáveis, ou seja, inalteráveis após sua nomeação.)
+        # len
 		# index()			-> Retorna a posição do primeiro elemento retornado
 		# del
+		# count('dado')			-> Conta quantas vezes aparece determinada string na tupla
+        # sorted
+        # max
+        # min
+
+    ## Listas ()
+        # len               -> Verifica o número de itens dentro de uma lista
+        # append            -> Adiciona um elemento no final de uma lista, ou faz uma ligação entre duas listas, para fazer uma cópia deve-se utilizar lista.append(lista_copiada[:])
+        # insert(x, y)      -> Insere determinado elemento em determinada posição especifica da lista
+        # pop               -> Deleta o ultimo elemento de uma lista
+        # sort              -> Organiza uma lista em ordem crescente, ou sort(reverse=True) para ordem decrescente.
+        # sorted            -
+        # clear             -> Limpa uma lista, apagando todas informações

@@ -20,4 +20,3 @@ while True:
         break
 
 print(f"Você digitou os valores: {sorted(lista)}")
-    
