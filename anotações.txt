@@ -70,16 +70,28 @@
 
     ## Junção
         # .join()                   -> Combina elementos de uma sequência com uma string.           Exp: ''.join(frase) resultando em 'Esseéumexemplodefrase'.
-   
+
 ### Laços de repetição
-	## for
-		for x
-	## while
-		
-		
-     
+	## for (O loop "for" é utilizado para iterar por uma sequência (como uma lista, tupla, string, ou range) e executar um bloco de código para cada item na sequência.)
+		for ITEM in LISTA:                          -> Verifica cada elemento dentro de uma estrutura de dados.
+        for ITERAÇÃO in RANGE(X,Y,Z):               -> Executa uma sequência de comandos por um número delimitado de vezes, estipulado através de X (Ponto inicial), Y (Ponto final) e Z (Passo)
+        for KEY, VALUE in enumerate(LISTA):         -> Obtem e permite manipular tanto o indice quanto o conteúdo de uma determinada estrutura de dados.
+        for ITEM1, ITEM2 in zip(LISTA1, LISTA2):    -> Itera simultaneamente sobre várias estruturas de dados em paralelo.
+
+        break                                       -> Interrompe imediatamente e saí do loop.
+        continue                                    -> Pula a iteração atual e continua com a próxima iteração do loop.
+        else                                        -> Define o próximo bloco de código a ser executado após finalizar a iteração naturalmente (Sem a utilização de break)
+
+	## while (O loop "while" é utilizado para executar um bloco de código repetidamente enquanto uma condição específica for verdadeira.)
+        while condicao:         -> Enquanto a variavel condicao for verdadeira executa um determinado bloco de código.
+        while True:             -> Cria um loop infinito
+        
+        break                   -> Interrompe imediatamente e saí do loop.
+        continue                -> Pula a iteração atual e continua com a próxima iteração do loop.
+		else                    -> Define o próximo bloco de código a ser executado após finalizar a iteração naturalmente (Sem a utilização de break)
+
 ### Variaveis Compostas
-	## Tuplas (Uma tupla serve para armazenar uma determinada quantidade de diferentes dados em uma mesma variavél, tuplas são imutáveis, ou seja, inalteráveis após sua nomeação.)
+	## Tuplas ( ) (Uma tupla serve para armazenar uma determinada quantidade de diferentes dados em uma mesma variavél, tuplas são imutáveis, ou seja, inalteráveis após sua nomeação.)
         # len
 		# index()			-> Retorna a posição do primeiro elemento retornado
 		# del
@@ -88,11 +100,21 @@
         # max
         # min
 
-    ## Listas ()
+    ## Listas [ ] (Listas tem a mesma função de armazenar variáveis do que as tuplas, porém são mutáveis. Podem ser alteradas, adicionadas ou removidas)
+        # list()            -> Cria uma lista para determinada variável.                Exp: lista = list()
         # len               -> Verifica o número de itens dentro de uma lista
         # append            -> Adiciona um elemento no final de uma lista, ou faz uma ligação entre duas listas, para fazer uma cópia deve-se utilizar lista.append(lista_copiada[:])
         # insert(x, y)      -> Insere determinado elemento em determinada posição especifica da lista
         # pop               -> Deleta o ultimo elemento de uma lista
         # sort              -> Organiza uma lista em ordem crescente, ou sort(reverse=True) para ordem decrescente.
-        # sorted            -
+        # sorted            -> Organiza uma lista temporariamente para visualização, porém sem alterar sua ordem.
         # clear             -> Limpa uma lista, apagando todas informações
+
+    # Dicionários { } (Dicionários tem a mesma função de armazenar variáveis do que as tuplas e as listas, é imutável, assim como as listas, porém você consegue personalizar além do elemento, o indice (posicionamento) dele.)
+        # dict()                                -> Cria um dicionário para determinada variável.            Exp: dicionario = dict()
+        # dicionario['nome'] = 'vitor'          -> Adiciona um valor para um item de um dicionário, caso ainda não exista, cria sozinho
+        # del dicionario['nome']                -> Deleta uma chave de um dicionário, removendo seus valores
+        # dicionario.copy()                     -> Faz uma cópia de um dicionário, para q
+        # dicionario.values()                   -> Retorna todos os valores de um dicionário
+        # dicionario.keys()                     -> Retorna todas as chaves de um dicionário
+        # dicionario.items()                    -> Retorna todos os itens de um dicionário
