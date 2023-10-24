@@ -33,4 +33,4 @@ BACK
     - 47    -> Cinza
     - 107   -> Branco;
 
-Exemplo letra roxa com fundo amarelo: \033[0:35:43m
+Exemplo letra roxa com fundo amarelo: \033[30:107m
