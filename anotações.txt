@@ -118,3 +118,18 @@
         # dicionario.values()                   -> Retorna todos os valores de um dicionário
         # dicionario.keys()                     -> Retorna todas as chaves de um dicionário
         # dicionario.items()                    -> Retorna todos os itens de um dicionário
+
+### Funções
+    * Toda variável declarada dentro de uma função terá escopo local, isto é, só tera valor dentro da própria função.
+    # def NOME(x,y,z):          -> Define uma função com o nome especificado e com quantos parâmetros (x,y,z) quiser.
+    # NOME(x,y,z)               -> Executa uma função, se não expecificar os parametros o programa sub-entende que você adicionou na ordem de recebimento.
+    # NOME(y=1,x=2,z=4)         -> Executa uma função, podendo especificar os parâmetros, para não precisar adicionar na ordem.
+    # def NOME(* num)           -> Cria uma túpula com todos elementos retornados, que podem ser infinitos.
+    # def NOME(x=0, y=0, z=0)   -> Define parametros opcionais para uma função, ou seja, se não forem especificados na chamada da função, passarão a valer o que está após o símbolo de igual.
+    # global VAR                -> Permite alterar o valor global de uma variável dentro de uma função, porém ela precisa ter sido declarada anteriormente fora da função 
+    # return X                  -> Retorna, envia, para a chamada da função algo especificado após o return.            Exp: return 1 (Quando o usuário executar a função, se chegar no return, o return enviara "1" para o usuário)
+
+### Informações adicionais
+    # help()                    -> No console, help() permite adicionar comandos para consultar a documentação, ou help(print) exibe a documentação da função especificada.
+    # comando.__doc__           -> Exibe informações sobre determinado comando          Exp: print(input.__doc__)
+    # """ doc """               -> Para criar uma docstring de uma função personaliza, você deve criar um print utilizando 3 aspas duplas abrindo e 3 fechando logo abaixo a declaração da função.
