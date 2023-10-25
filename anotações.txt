@@ -129,6 +129,12 @@
     # global VAR                -> Permite alterar o valor global de uma variável dentro de uma função, porém ela precisa ter sido declarada anteriormente fora da função 
     # return X                  -> Retorna, envia, para a chamada da função algo especificado após o return.            Exp: return 1 (Quando o usuário executar a função, se chegar no return, o return enviara "1" para o usuário)
 
+### Modularização
+    Todos arquivos .py podem ser mudularizados, desde que que contenham funções dentro. Para isso, devemos utilizar "import NOMEDOARQUIVO" para importarmos todas funções de determinado arquivo. Ou, "from NOMEDOARQUIVO import NOMEDAFUNÇÃO", porém o python recomenda a utilização da primeira maneira para evitar conflitos de nomes de funções importadas, e caso ocorra, passa a valer a ultima importação declarada com o mesmo nome.
+
+### Pacotes
+    Além da modularização, é possivel empacotar funções de um código em pacotes, é útil quando um único arquivo de modularização fica muito extenso, ou com assuntos diferentes. O pacote, permite criar grupos de funções e separar em pacotes. Para isso criamos pastas, com o nome do pacote (Podemos adicionar pacotes dentro de pacotes) e adicionamos um arquivo __init__.py dentro da pasta, que é onde o código daquele pacote deverá ser armazenado.
+
 ### Informações adicionais
     # help()                    -> No console, help() permite adicionar comandos para consultar a documentação, ou help(print) exibe a documentação da função especificada.
     # comando.__doc__           -> Exibe informações sobre determinado comando          Exp: print(input.__doc__)
