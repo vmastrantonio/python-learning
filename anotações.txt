@@ -101,14 +101,18 @@
         # min
 
     ## Listas [ ] (Listas tem a mesma função de armazenar variáveis do que as tuplas, porém são mutáveis. Podem ser alteradas, adicionadas ou removidas)
-        # list()            -> Cria uma lista para determinada variável.                Exp: lista = list()
-        # len               -> Verifica o número de itens dentro de uma lista
-        # append            -> Adiciona um elemento no final de uma lista, ou faz uma ligação entre duas listas, para fazer uma cópia deve-se utilizar lista.append(lista_copiada[:])
-        # insert(x, y)      -> Insere determinado elemento em determinada posição especifica da lista
-        # pop               -> Deleta o ultimo elemento de uma lista
-        # sort              -> Organiza uma lista em ordem crescente, ou sort(reverse=True) para ordem decrescente.
-        # sorted            -> Organiza uma lista temporariamente para visualização, porém sem alterar sua ordem.
-        # clear             -> Limpa uma lista, apagando todas informações
+        # list()                    -> Cria uma lista para determinada variável.                Exp: lista = list()
+        # len                       -> Verifica o número de itens dentro de uma lista
+        # append                    -> Adiciona um elemento no final de uma lista, ou faz uma ligação entre duas listas, para fazer uma cópia deve-se utilizar lista.append(lista_copiada[:])
+        # insert(x, y)              -> Insere determinado elemento em determinada posição especifica da lista
+        # pop                       -> Deleta o ultimo elemento de uma lista
+        # sort                      -> Organiza uma lista em ordem crescente, ou sort(reverse=True) para ordem decrescente.
+        # sorted                    -> Organiza uma lista temporariamente para visualização, porém sem alterar sua ordem.
+        # lista.extend(lista2)      -> Acrescenta os itens de lista2 a lista.
+        # lista.remove("ITEMLISTA") -> Remove da lista um item especificado
+        # lista.copy()              -> Faz uma cópia de uma lista para atrelar a alguma variável.
+        # clear                     -> Limpa uma lista, apagando todas informações
+        # lista.reverse()           -> Inverte a ordem dos items de uma lista
 
     # Dicionários { } (Dicionários tem a mesma função de armazenar variáveis do que as tuplas e as listas, é imutável, assim como as listas, porém você consegue personalizar além do elemento, o indice (posicionamento) dele.)
         # dict()                                -> Cria um dicionário para determinada variável.            Exp: dicionario = dict()
@@ -118,6 +122,9 @@
         # dicionario.values()                   -> Retorna todos os valores de um dicionário
         # dicionario.keys()                     -> Retorna todas as chaves de um dicionário
         # dicionario.items()                    -> Retorna todos os itens de um dicionário
+        # dicionario.add()                      -> Adiciona um novo item a um dicionário
+        # dicionario.remove()                   -> Remove um item especifico de um dicionário
+        # dicionario.get()                      -> A diferença de utilizar o get para selecionar um elemento, é que caso o elemento não seja encontrado, em vez de gerar um erro, apenas retorna "None"
 
 ### Funções
     * Toda variável declarada dentro de uma função terá escopo local, isto é, só tera valor dentro da própria função.
@@ -134,6 +141,22 @@
 
 ### Pacotes
     Além da modularização, é possivel empacotar funções de um código em pacotes, é útil quando um único arquivo de modularização fica muito extenso, ou com assuntos diferentes. O pacote, permite criar grupos de funções e separar em pacotes. Para isso criamos pastas, com o nome do pacote (Podemos adicionar pacotes dentro de pacotes) e adicionamos um arquivo __init__.py dentro da pasta, que é onde o código daquele pacote deverá ser armazenado.
+
+### Manipulação de arquivos
+    ## Modos
+        # r             -> Leitura
+        # a             -> Incrementar
+        # w             -> Escrita
+        # x             -> Criar arquivo
+        # r+            -> Leitura + Escrita
+    ## Funções
+        # open("arquivo.txt", "MODO")           -> Abre determinado arquivo e atrela a determinada variável
+        # arquivo.close()                       -> Fecha o arquivo, lembrar de sempre fechar para evitar problemas.
+        # arquivo.readable()                    -> Retorna True ou False, dependendo se o arquivo pode ser lido da forma que foi aberto ou não.
+        # arquivo.read()                        -> Permite atrelar todo conteúdo do arquivo a uma variável.
+        # arquivo.readline()                    -> Le a próxima linha do arquivo (se adicionarmos 3 readlines seguidos, será lido as 3 primeiras linhas.)
+        # arquivo.readlines()                   -> Permite atrelar todo conteúdo do arquivo a uma lista, separando itens por linhas
+        # arquivo.write("conteudo")             -> Adiciona algo ao final do arquivo, para pular linha utilizar a quebra de linha "\n"
 
 ### Informações adicionais
     # help()                    -> No console, help() permite adicionar comandos para consultar a documentação, ou help(print) exibe a documentação da função especificada.
