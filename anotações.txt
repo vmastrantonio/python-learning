@@ -149,6 +149,7 @@
         # w             -> Escrita
         # x             -> Criar arquivo
         # r+            -> Leitura + Escrita
+
     ## Funções
         # open("arquivo.txt", "MODO")           -> Abre determinado arquivo e atrela a determinada variável
         # arquivo.close()                       -> Fecha o arquivo, lembrar de sempre fechar para evitar problemas.
@@ -157,6 +158,61 @@
         # arquivo.readline()                    -> Le a próxima linha do arquivo (se adicionarmos 3 readlines seguidos, será lido as 3 primeiras linhas.)
         # arquivo.readlines()                   -> Permite atrelar todo conteúdo do arquivo a uma lista, separando itens por linhas
         # arquivo.write("conteudo")             -> Adiciona algo ao final do arquivo, para pular linha utilizar a quebra de linha "\n"
+
+### Expressões regulares (Busca por padrões em strings)
+    ## Métodos da biblioteca "re" (precisa fazer o import)
+        # .search('')              -> Pesquisa por substrings dentro de uma string
+        # .match('')               -> Ve se o começo de uma string é igual a um padrão
+        # .findall('')             -> Procura todas substrings em uma string que corresponda a um padrão
+
+    ## Metacaractéres
+        # .         -> Qualquer caracteres
+        # \w        -> Qualquer caractere alfa-numérico
+        # \W        -> Qualquer caractere não alfa-numérico
+        # \d        -> Qualquer caractere que seja um dígito
+        # \D        -> Qualquer caractere que não seja um dígito
+        # \s        -> Espaço em branco
+        # ^a        -> Indica que a palavra deve começar com o caractere após o ^
+        # $a        -> Indica que a palavra deve terminar com o caractere após o $
+        # \         -> Usado antes de metacaracteres para especificar seu seu significado literal
+
+    ## Quantificadores
+        # []            -> Opcional entre os que estão dentro dos colcheter
+        # ()            -> Captura grupos de caracteres
+        # *             -> De zero a mais vezes
+        # ?             -> Zero ou uma vez
+        # +             -> Uma ou mais vezes
+        # {m,n}         -> De M a N vezes
+        # |             -> Ou
+
+    ## Expressão regular que detecta e-mails: \w+@\w+\.w+
+        \w          -> Verifica se tem pelo menos 1 caractere alfa numérico
+        +           -> Junta os caracteres anteriores com a próxima regra
+        @           -> Verifica se a próxima regra é um @
+        \w          -> Verifica se tem pelo menos 1 caractere alfa numérico
+        \.          -> Verifica se o próximo caractere é um . (Precisa da \ pq só o . é utilizado pra outra coisa)
+
+    ## Expressão regular que detecta numero de telefones: \(\d{2}\)\d{4,5}-\d{4}
+        \(              -> Verifica se o caractere é um (
+        \d{2}           -> Verifica se os próximos caracteres são 2 digitos
+        \)              -> Verifica se o caractere é um )
+        \d{4,5}         -> Verifica se os próximos 4 ou 5 caracteres são digitos
+        -               -> Verifica se o próximo caractere é um -
+        \d{4}           -> Verifica se os próximos 4 caracteres são digitos
+
+    ## Expressão regular que detecta placa de carro: 
+        [A-Za-z]{3}             -> Verifica se os próximos caracteres são letras de A até Z ou de a até z
+        -                       -> Verifica se o próximo caractere é um -
+        \d{4}                   -> Verifica se os próximos 4 caracteres são digitos
+
+### Orientação a objetos (Classes e objetos)
+    ## Definindo uma classe
+        # class NOMEDACLASSE:                   -> Cria uma classe com o nome "NOMEDACLASSE"
+        # def __init__(self, a, b, c)           -> Define a função construtora de objetos dessa classe
+        # self.a = a                            -> Define que o atributo a de um novo objeto será equivalente ao parâmetro a do construtor de objetos.
+
+    ## Definindo um novo objeto
+        # objeto = NOMEDACLASSE(a, b, c)            -> Cria um objeto utilizando o construtor da classe especificada, utilizando os atributos especificados
 
 ### Informações adicionais
     # help()                    -> No console, help() permite adicionar comandos para consultar a documentação, ou help(print) exibe a documentação da função especificada.
